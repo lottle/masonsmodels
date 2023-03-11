@@ -1,30 +1,31 @@
+<!-- eslint-disable vue/no-multiple-template-root -->
 <template>
-  <n-carousel autoplay>
-    <img
-      class="carousel-img"
-      src="https://naive-ui.oss-cn-beijing.aliyuncs.com/carousel-img/carousel1.jpeg"
-    >
-    <img
-      class="carousel-img"
-      src="https://naive-ui.oss-cn-beijing.aliyuncs.com/carousel-img/carousel2.jpeg"
-    >
-    <img
-      class="carousel-img"
-      src="https://naive-ui.oss-cn-beijing.aliyuncs.com/carousel-img/carousel3.jpeg"
-    >
-    <img
-      class="carousel-img"
-      src="https://naive-ui.oss-cn-beijing.aliyuncs.com/carousel-img/carousel4.jpeg"
-    >
-  </n-carousel>
+  <n-card class="banner">
+  </n-card>
+  <n-grid style="padding-top: 20px;" cols="3" item-responsive responsive="screen">
+    <n-grid-item style="padding: 20px 20px 20px 20px;">
+      <ShopItem/>
+    </n-grid-item>
+  </n-grid>
 </template>
 
+<script lang="ts">
+  import { defineComponent, h, ref, Component } from 'vue'
+  import { NIcon, NGrid, NGridItem } from 'naive-ui'
+  import ShopItem from './ShopItem.vue';
+
+  export default defineComponent({
+  components:{
+    ShopItem
+  }
+})
+</script>
 
 <style scoped>
-  
-.carousel-img {
-  width: 100%;
-  height: 240px;
-  object-fit: cover;
+.banner {
+  max-width: 100%;
+  min-height: 400px;;
+  background-color:black;
 }
 </style>
+

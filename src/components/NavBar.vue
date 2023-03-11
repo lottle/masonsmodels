@@ -1,13 +1,14 @@
+<!-- eslint-disable vue/no-v-model-argument -->
 <template>
-    <n-grid cols="4" item-responsive responsive="screen">
-        <n-grid-item span="0 m:1 l:2">
+    <n-grid style="padding-top: 20px;" cols="2" item-responsive responsive="screen">
+        <n-grid-item span="50%">
             <div>
-                <h2>Masons Models</h2>
+                <h2 style="text-align:right">Masons Models</h2>
             </div>
         </n-grid-item>
         <n-grid-item>
             <div>
-                <n-menu v-model:value="activeKey" mode="horizontal" :options="menuOptions" />
+                <n-menu style="right:0px;position:absolute;" v-model:value="activeKey" mode="horizontal" :options="menuOptions" />
             </div>
         </n-grid-item>
     </n-grid>
