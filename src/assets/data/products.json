@@ -1,16 +1,18 @@
-[{
-    "code": "UX111",
-    "name": "Item1",
-    "description": "this is the first item",
-    "stock": 1,
-    "cost": "20.00",
-    "img": "blue.png"
-},
-{
-    "code": "UX112",
-    "name": "Item2",
-    "description": "this is the second item",
-    "stock": 1,
-    "cost": "55.00",
-    "img": "pink.png"
-}]
+[
+    {
+        "code": "UX111",
+        "name": "Item1",
+        "description": "this is the first item",
+        "stock": 1,
+        "cost": "20.00",
+        "img": "blue.png"
+    },
+    {
+        "code": "UX112",
+        "name": "Item2",
+        "description": "this is the second item",
+        "stock": 1,
+        "cost": "55.00",
+        "img": "pink.jpeg"
+    }
+]
