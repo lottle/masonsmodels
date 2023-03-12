@@ -1,11 +1,15 @@
 <template>
     <n-card v-bind:title="title">
-      <template #cover>
-        <img v-bind:src="`../assets/products/${img}`">
+      <template #header-extra>
+        {{price}}
       </template>
+      <template #cover>
+        <img v-bind:src="`/assets/img/${img}`" />
+      </template>
+      
 
       {{ description }} 
-      <n-space >
+      <n-space>
         <n-button>View</n-button>
         <n-button type="primary">
           Add to Cart
@@ -27,11 +31,7 @@ export default {
 </script>  
 
 <style scoped>
-.n-card {
-  max-width: 300px;
-}
 .n-space {
-  padding-top: 10px;
-   text-align: center;
+  padding-top: 25px;
 }
 </style>
